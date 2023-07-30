@@ -28,7 +28,7 @@ def shorten_link(link):
         data.append(
             {
                 "code": code,
-                "website": f"http://localhost:5000/{code}",
+                "website": f"http://localhost:8000/{code}",
                 "redirection": link
             }
         )
