@@ -9,7 +9,7 @@ app = FastAPI()
 def redirection(code: str):
     data = []
 
-    with open("codes.json", "r") as file:
+    with open("codes.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
     res = list(filter(lambda item: item["code"] == code, data))

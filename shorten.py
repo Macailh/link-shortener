@@ -16,7 +16,7 @@ def shorten_link(link):
 
     data = []
 
-    with open("codes.json", "r") as file:
+    with open("codes.json", "r", encoding="utf-8") as file:
         data = json.load(file)
 
     exists = any(item["code"] == code for item in data)
@@ -24,7 +24,7 @@ def shorten_link(link):
     if exists:
         code = generate_code()
 
-    with open("codes.json", "w") as file:
+    with open("codes.json", "w", encoding="utf-8") as file:
         data.append(
             {
                 "code": code,
@@ -33,6 +33,3 @@ def shorten_link(link):
             }
         )
         json.dump(data, file, indent=2)
-
-
-shorten_link("https://www.google.com")
