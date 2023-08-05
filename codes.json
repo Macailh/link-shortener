@@ -8,5 +8,10 @@
     "code": "3lmf2z5vw",
     "website": "http://localhost:8000/3lmf2z5vw",
     "redirection": "https://www.google.com"
+  },
+  {
+    "code": "rDwQ39LtG",
+    "website": "http://localhost:8000/rDwQ39LtG",
+    "redirection": "https://www.example.com"
   }
 ]
